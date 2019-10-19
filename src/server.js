@@ -13,6 +13,12 @@ app.set('port', process.env.PORT || 3000);
 app.use(express.json());
 
 // CORS
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Origin, Cache-Control");
+    // res.json({data: [1,2,3,4]})
+    next()
+});
 app.use(cors());
 
 //Routes
