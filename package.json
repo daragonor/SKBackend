@@ -1,29 +1,33 @@
 {
-  "name": "skbackend",
-  "version": "1.0.0",
-  "description": "Food information backend for the UPC - Smart Kitchen thesis project",
-  "main": "src/server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/daragonor/SKBackend.git"
-  },
-  "keywords": [
-    "food"
-  ],
-  "author": "Daniel Aragon & Johnny Ramos",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/daragonor/SKBackend/issues"
-  },
-  "homepage": "https://github.com/daragonor/SKBackend#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "request": "^2.88.0"
-  },
-  "devDependencies": {
-    "nodemon": "^1.19.1"
-  }
+    "name": "skbackend",
+    "version": "1.0.0",
+    "description": "Food information backend for the UPC - Smart Kitchen thesis project",
+    "main": "src/server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon src/server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/daragonor/SKBackend.git"
+    },
+    "keywords": [
+        "food"
+    ],
+    "author": "Daniel Aragon & Johnny Ramos",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/daragonor/SKBackend/issues"
+    },
+    "homepage": "https://github.com/daragonor/SKBackend#readme",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "mysql": "^2.17.1",
+        "request": "^2.88.0"
+    },
+    "devDependencies": {
+        "nodemon": "^1.19.1"
+    }
 }
