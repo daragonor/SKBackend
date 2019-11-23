@@ -1,5 +1,5 @@
 class Ingredient {
-    constructor() { }
+    constructor() {}
     getIngredientId(name) {
         var map = {
             'Beterraga': '11080',

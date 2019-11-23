@@ -22,7 +22,8 @@ app.use(function(req, res, next) {
 app.use(cors());
 
 //Routes
-app.use('/api', require('./routes/ingredients-route'));
+app.use('/api/ingredientes', require('./routes/ingredients-route'));
+app.use('/api/recetas', require('./routes/recetas-route'));
 //app.use('/api', artist_routes);
 
 app.listen(app.get('port'), () => {
