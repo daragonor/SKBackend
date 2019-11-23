@@ -4,7 +4,7 @@ var mysql = require('mysql');
 var dbConn = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: '',
+    password: 'smartkitchen',
     database: 'smart_kitchen'
 });
 
